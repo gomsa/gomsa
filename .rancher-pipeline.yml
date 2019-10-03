@@ -1,4 +1,8 @@
 stages:
+- name: Namespace
+  steps:
+  - applyYamlConfig:
+      path: ./namespace.yaml
 - name: Redis
   steps:
   - applyAppConfig:
@@ -9,10 +13,6 @@ stages:
         cluster.slaveCount: "2"
       name: redis
       targetNamespace: api
-- name: Namespace
-  steps:
-  - applyYamlConfig:
-      path: ./namespace.yaml
 - name: Config
   steps:
   - applyYamlConfig:
