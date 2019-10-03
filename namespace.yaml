@@ -4,7 +4,6 @@ metadata:
    name: api
    labels:
      name: api
-kind: Namespace
 metadata:
    name: srv
    labels:
