@@ -1,8 +1,10 @@
 stages:
+# 命名空间部署
 - name: Namespace
   steps:
   - applyYamlConfig:
       path: ./namespace.yaml
+# 依赖 redis 部署
 - name: Redis
   steps:
   - applyAppConfig:
@@ -13,10 +15,12 @@ stages:
         cluster.slaveCount: "2"
       name: redis
       targetNamespace: api
+# 配置部署
 - name: Config
   steps:
   - applyYamlConfig:
       path: ./config.yaml
+# rpc 接口部署
 - name: Micro
   steps:
   - applyYamlConfig:
