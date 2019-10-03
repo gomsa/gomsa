@@ -1,9 +1,4 @@
 stages:
-# 命名空间部署
-- name: Namespace
-  steps:
-  - applyYamlConfig:
-      path: ./namespace.yaml
 # 依赖 redis 部署
 - name: Redis
   steps:
