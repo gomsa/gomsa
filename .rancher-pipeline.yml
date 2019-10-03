@@ -13,8 +13,8 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./config.yaml
-- name: Deploy
+- name: MicroApi
   steps:
   - applyYamlConfig:
-      path: ./micro-api.yaml
+      path: ./app/micro-api.yaml
 
