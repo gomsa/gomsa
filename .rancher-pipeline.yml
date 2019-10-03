@@ -1,0 +1,20 @@
+stages:
+- name: Redis
+  steps:
+  - applyAppConfig:
+      catalogTemplate: cattle-global-data:library-redis
+      version: 3.0.2
+      answers:
+        master.persistence.enabled: "true"
+        cluster.slaveCount: "2"
+      name: redis
+      targetNamespace: api
+- name: Config
+  steps:
+  - applyYamlConfig:
+      path: ./config.yaml
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
+
