@@ -13,7 +13,7 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./config.yaml
-- name: MicroApi
+- name: Micro
   steps:
   - applyYamlConfig:
       path: ./app/micro-api.yaml
