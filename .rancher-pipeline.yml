@@ -34,7 +34,7 @@ stages:
       name: user
       targetNamespace: srv
 # user 用户服务
-- name: UserApi
+- name: User
   steps:
   - applyYamlConfig:
       path: ./app/user.yaml
