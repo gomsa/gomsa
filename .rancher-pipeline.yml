@@ -21,7 +21,7 @@ stages:
   - applyYamlConfig:
       path: ./app/micro-api.yaml
 # user 用户数据库
-- name: Mariadb
+- name: UserMariadb
   steps:
   - applyAppConfig:
       catalogTemplate: cattle-global-data:library-mariadb
@@ -34,12 +34,12 @@ stages:
       name: user
       targetNamespace: srv
 # user 用户服务
-- name: Micro
+- name: UserApi
   steps:
   - applyYamlConfig:
       path: ./app/user.yaml
 # user-api 用户 API 服务
-- name: Micro
+- name: UserApi
   steps:
   - applyYamlConfig:
       path: ./app/user-api.yaml
