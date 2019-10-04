@@ -32,9 +32,12 @@ spec:
       labels:
         app: user
     spec:
+      imagePullSecrets:
+      - name: pipeline-docker-registry
       containers:
         - name: user
           image: gmsa/user
+          imagePullPolicy: Always
           command: [
             "service",
             "--selector=static",
