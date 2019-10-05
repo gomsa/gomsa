@@ -16,10 +16,10 @@ stages:
   - applyYamlConfig:
       path: ./config.yaml
 # RBAC
-- name: RBAC
-  steps:
-  - applyYamlConfig:
-      path: ./RBAC.yaml
+# - name: RBAC
+#   steps:
+#   - applyYamlConfig:
+#       path: ./RBAC.yaml
 # rpc 接口部署
 - name: Micro
   steps:

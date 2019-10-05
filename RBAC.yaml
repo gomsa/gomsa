@@ -28,4 +28,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: micro-services
-  namespace: default
+  namespace: api
