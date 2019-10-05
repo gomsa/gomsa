@@ -29,3 +29,6 @@ subjects:
 - kind: ServiceAccount
   name: micro-services
   namespace: api
+- kind: ServiceAccount
+  name: micro-services
+  namespace: srv

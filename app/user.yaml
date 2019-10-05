@@ -37,7 +37,7 @@ spec:
       - name: pipeline-docker-registry
       containers:
         - name: user
-          image: gmsa/user
+          image: gmsa/user:latest
           imagePullPolicy: Always
           command: [
             "service",
