@@ -4,8 +4,8 @@ metadata:
   name: user
   namespace: srv
 data:
-  admin-password: YWRtaW4xMjMK
-  app-key: NjFhMTBiNjVjMWY5Mjg5MTYxMzhhYzMzOTMxZGI2NTcK
+  admin-password: YWRtaW4xMjM=
+  app-key: NjFhMTBiNjVjMWY5Mjg5MTYxMzhhYzMzOTMxZGI2NTc=
 ---
 apiVersion: v1
 kind: Secret
