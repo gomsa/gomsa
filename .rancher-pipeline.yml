@@ -50,7 +50,7 @@ stages:
       path: ./app/user-api.yaml
 
 # old 老数据库服务
-- name: UserApi
+- name: OldSql
   steps:
   - applyYamlConfig:
       path: ./app/old-sql.yaml
